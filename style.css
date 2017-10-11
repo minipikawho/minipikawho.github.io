@@ -1,0 +1,374 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: #fff;
+    margin: 35px;
+}
+
+p {
+    font-size: 2em;
+    line-height: 45px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    color: black;
+    font-style: normal;
+    font-size: 2em;
+    padding: 5px;
+}
+
+li.sub{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.topbar {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+}
+
+.topbar a{
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.topbar a:hover {
+    background-color: #a8deee;
+    color: white;
+}
+
+.topbuttons {
+    background-color: white; 
+    color: black; 
+    border: 3px solid #a8deee;
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.centerdiv {
+    margin: 0 auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-grid;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f7f5f3;
+    z-index: 1;
+    overflow: auto;
+    text-align: center;
+    margin-left: 3px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;   
+}
+
+.dropdown-content a {
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.dropdown-content a:hover {
+    background-color: #f6f7ff;
+    color: #eecfa8;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+h1 {
+    color: #a8deee;
+    background-color: #fff;
+    font-size: 5em;
+    margin: 0;
+    font-style: normal;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.homepagepicandtext {
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    text-align: center;
+}
+
+#homepagepic {
+    margin-top: 40px;
+    border-style: solid;
+    border-color: #eeaca8;
+    border-width: 50px;
+}
+
+#homepagetext {
+    grid-column: 2 / 3;
+    text-align: center;
+    padding-top: 0;
+    padding-right: 80px;
+}
+
+.aboutmepicandtext {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    text-align: center;
+}
+
+ #aboutmepic {
+    padding-top: 50px;
+ }
+
+#aboutmetext {
+    grid-column: 1 / 2;
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 45px;
+}
+
+#whoamitext {
+    line-height: 0px;
+    text-align: center;
+    color: #a8deee;
+    background-color: #fff;
+    font-size: 3em;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 0;
+    padding-right: 50%
+}
+
+.activitiesheaders {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    text-align: center;
+    color: #a8deee;
+    background-color: #fff;
+    font-size: 3em;
+    padding-top: 20px;
+    padding-right: 30px;
+    line-height: 50px;
+}
+
+.activitieslist{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    line-height: 45px;
+    margin-left: 100px;
+    font-size: 1.1em;
+}
+
+#interestheader {
+    text-align: center;
+    color: #a8deee;
+    background-color: #fff;
+    font-size: 3em;
+}
+
+#interestslistmain {
+    width: 50%;
+    padding-left: 500px;
+    line-height: 50px;
+    font-size: 1.1em;
+}
+
+#contactinfoheader {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+table {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #eeaca8;
+    width: 100%;
+    border-spacing: 30px;
+    border-collapse: collapse;
+}
+
+td {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #eeaca8;
+    width: 33.33%;
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+th {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #eeaca8;
+    width: 33.33%;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contactinfolinks:link {
+    color: #a8deee;
+}
+
+.contactinfolinks:visited {
+    color: #eecfa8;
+}
+
+.contactinfolinks:hover {
+    color: #eeaca8;
+}
+
+.contactinfolinks:active {
+    color: black;
+}
+
+.resumeheadersleft {
+    color: #a8deee;
+    font-size: 4em;
+    font-style: normal;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    font-weight: bold;
+}
+
+.resumeheadersright {
+    color: #a8deee;
+    font-size: 4em;
+    font-style: normal;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    grid-column: 2;
+    font-weight: bold;
+}
+
+.gridleft {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.gridright {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.babygridleft {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 140px;
+}
+
+.babygridright {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 140px;
+}
+
+.resumesubheadersleft {
+    color: #a8deee;
+    font-size: 3.2em;
+    font-style: normal;
+    text-align: center;
+    padding-top: 20px;
+    grid-column: 1;
+}
+
+.resumesubheadersright {
+    color: #a8deee;
+    font-size: 3.5em;
+    font-style: normal;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    grid-column: 1;
+}
+
+.iconlinkright {
+    grid-column: 2;
+    text-align: center;
+    height: 100%;
+}
+
+.resumelistsleft {
+    grid-column: 1;
+    width: 100%;
+    font-size: 1.1em;
+    line-height: 40px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 75px;
+}
+
+.resumelistsright {
+    grid-column: 2;
+    width: 100%;
+    font-size: 1.1em;
+    line-height: 40px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 150px;
+    max-width: 85%;
+}
+
+#resumedownload1 {
+    text-align: center;
+}
+
+#resumedownload2 {
+    font-size: 4em;
+    margin-bottom: 75px;
+    margin-top: 100px;
+    color: #a8deee;
+}
+
+#resumedownload2:hover {
+    color: #eeaca8;
+}
+
+
+/*Colors: blue: #a8deee salmon: #eeaca8 tan: #eecfa8; */
+
+
+
